@@ -811,7 +811,7 @@ a.btn_services {
 }
 
 .gallery-wrap .row div img:hover{
-  -webkit-filter: brightness(60%);
+  
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
