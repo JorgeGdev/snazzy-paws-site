@@ -84,13 +84,11 @@
           enabled: true
         },
         onStep: function(from, to, percent) {
-          // 1) Ajusta el blur según el porcentaje:
-          //    Si percent = 0 -> blur = 8px
-          //    Si percent = 100 -> blur = 0px
+          // 1) Blur adjust:
           const maxBlur = 8; 
           const blurValue = maxBlur * (1 - (percent/100));
           
-          // 2) Aplicamos el blur dinámico a la imagen dentro de .chart
+          // 2) Apply blur in .chart
           $(this.el).find('img').css('filter', `blur(${blurValue}px)`);
         }
       });
